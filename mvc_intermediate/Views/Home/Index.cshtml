@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+    string[] kurslar = { "mvc kursu", "web form kursu", "c# kursu" };
+}
+
+<h2>KURSLAR</h2>
+<hr />
+<ul>
+    @foreach (var kurs in kurslar)
+    {
+        <li>
+            @kurs
+        </li>
+    }
+</ul>
+
+
