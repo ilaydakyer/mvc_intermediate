@@ -16,7 +16,11 @@ namespace mvc_intermediate.Controllers
             //getirilen bilgiler bir model içerisine yani 
             //bir sınıf içerisine aktarılır
             //ve bu model view'a gönderilir
-            return View();
+
+            string[] kurslar = { "mvc kursu", "web form kursu", "c# kursu" };
+
+
+            return View(kurslar);
         }
     }
 }
